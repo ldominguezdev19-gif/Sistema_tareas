@@ -13,4 +13,9 @@ console.log(nombreTarea)
 formTarea.addEventListener("submit", function (SubmitEvent){
     SubmitEvent.preventDefault()
     console.log(nombreTarea.value)
+
+    const NuevaTarea = document.createElement("li")
+    NuevaTarea.textContent = nombreTarea.value
+    listaTareas.appendChild(NuevaTarea)
+
 })
