@@ -1,9 +1,10 @@
+/*Trae los elementos del HTML con su ID*/
 const formTarea = document.getElementById("tarea")
 const nombreTarea = document.getElementById("nombre-tarea")
 const listaTareas = document.getElementById("lista-tareas")
 const btnEnviar = document.getElementById("btn-submit")
 
-formTarea.addEventListener("submit", function (SubmitEvent){
+formTarea.addEventListener("submit", function (SubmitEvent){   /*escuchar cuando se envia el formulario*/
     SubmitEvent.preventDefault()  /*Esta linea frena la recarga de la pagina*/ 
 
     const NuevaTarea = document.createElement("li")
