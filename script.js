@@ -12,3 +12,6 @@ formTarea.addEventListener("submit", function (SubmitEvent){   /*escuchar cuando
     listaTareas.appendChild(NuevaTarea)  /*mete el li dentro del ul*/
 
 })
+
+const inputElement = document.querySelector("#nombre-tarea");
+console.log(`Original value: ${inputElement.defaultValue}`);
