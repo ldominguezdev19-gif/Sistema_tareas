@@ -10,8 +10,5 @@ formTarea.addEventListener("submit", function (SubmitEvent){   /*escuchar cuando
     const NuevaTarea = document.createElement("li")
     NuevaTarea.textContent = nombreTarea.value  /*ponerle al li el texto que escribio el usuario o sea la tarea*/ 
     listaTareas.appendChild(NuevaTarea)  /*mete el li dentro del ul*/
-
+    nombreTarea.value = ""
 })
-
-const inputElement = document.querySelector("#nombre-tarea");
-console.log(`Original value: ${inputElement.defaultValue}`);
