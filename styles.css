@@ -22,6 +22,15 @@ form{
     gap: 10px;
 }
 
+#nombre-tarea{
+    flex: 1;
+    background: #1B1E24;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: grey;
+}
+
 #btn-submit{
     background-color: #4C82F7;
     border: none;
