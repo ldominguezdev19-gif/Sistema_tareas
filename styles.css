@@ -111,5 +111,10 @@ form select:focus{
 
 .materia li{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: flex-end;
+    border: 1px solid #9aa2af;
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
 }
