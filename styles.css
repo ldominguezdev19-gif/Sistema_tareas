@@ -64,4 +64,9 @@ form input, form select{
     border-radius: 16px;
     color: #9aa2af;
     padding: 10px;
+    cursor: pointer;
+}
+
+.botones-filtro button:hover{
+    color: #eceef2;
 }
