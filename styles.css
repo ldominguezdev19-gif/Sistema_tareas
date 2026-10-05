@@ -24,6 +24,10 @@ body{
     color: #9aa2af;
 }
 
+form label{
+    width: 100%;
+}
+
 form{
     display: flex;
     gap: 10px;
