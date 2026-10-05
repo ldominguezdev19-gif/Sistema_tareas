@@ -45,6 +45,18 @@ form input, form select{
     padding: 10px;
 }
 
+form input:focus{
+    outline: none;
+    border-color: #4c82f7;
+
+}
+
+form select:focus{
+    outline: none;
+    border-color: #4c82f7;
+
+}
+
 .btn-submit{
     background-color: #4C82F7;
     border: none;
@@ -76,4 +88,5 @@ form input, form select{
 .botones-filtro button.activo{
     color: #4C82F7;
     border: 1px solid #4C82F7;
+    background-color: #1f2b46;
 }
