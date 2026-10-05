@@ -13,19 +13,19 @@
         <form id="materia">
             <label for="nombre-materia">Nueva materia: </label>
             <input type="text" name="nombre-materia" id="nombre-materia" required>
-            <button id="btn-submit-materia" type="submit">Agregar</button>
+            <button id="btn-submit-materia" type="submit">Crear materia</button>
         </form>
         <form id="tarea">
             <label for="nombre-tarea">Ingresa la Tarea:</label>
             <input type="text" name="nombre-tarea" id="nombre-tarea" required>
-            <select name="lista-materia" id="lista-materia"></select>
+            <select name="lista-materia" id="lista-materia" aria-label="materia de la tarea"></select>
             <button id="btn-submit-tarea" type="submit">Agregar</button>
         </form>
         
         <div class="botones-filtro">
-            <button type="button" data-filtro="Todos">Todos</button>
-            <button type="button" data-filtro="Pendientes">Pendientes</button>
-            <button type="button" data-filtro="Completadas">Completadas</button>
+            <button type="button" data-filtro="todos">Todos</button>
+            <button type="button" data-filtro="pendientes">Pendientes</button>
+            <button type="button" data-filtro="completadas">Completadas</button>
         </div>
     <div class="contenedor-materias" id="contenedor-materias"></div>
     </div>
