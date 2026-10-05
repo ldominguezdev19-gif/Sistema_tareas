@@ -1,6 +1,7 @@
 body{
     background-color: #121418;
     font-family: sans-serif;
+    color: #eceef2;
 }
 
 .card-form{
@@ -20,7 +21,7 @@ body{
 }
 
 .subtitle{
-    color: #5f6773;
+    color: #9aa2af;
 }
 
 form{
@@ -28,12 +29,13 @@ form{
     gap: 10px;
 }
 
-form input{
+form input, form select{
     flex: 1;
     background: #1B1E24;
     border: 1px solid #9aa2af;
     border-radius: 4px;
     color: grey;
+    font-family: inherit;
 }
 
 .btn-submit{
