@@ -69,4 +69,11 @@ form input, form select{
 
 .botones-filtro button:hover{
     color: #eceef2;
+    border: 1px solid #eceef2;
+
+}
+
+.botones-filtro button.activo{
+    color: #4C82F7;
+    border: 1px solid #4C82F7;
 }
