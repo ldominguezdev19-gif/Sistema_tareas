@@ -14,7 +14,7 @@ body{
 }
 
 .titulo{
-    color: white;
+    color: #5f6773;
     font-size: 28px;
     margin: 0;
 }
@@ -24,7 +24,7 @@ form{
     gap: 10px;
 }
 
-#nombre-tarea{
+form input{
     flex: 1;
     background: #1B1E24;
     border: none;
@@ -33,7 +33,7 @@ form{
     color: grey;
 }
 
-#btn-submit{
+.btn-submit{
     background-color: #4C82F7;
     border: none;
     border-radius: 5px;
