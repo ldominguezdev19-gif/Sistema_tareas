@@ -6,7 +6,7 @@ body{
 
 .card-form{
     background-color: #1B1E24;
-    border: 1px solid #1B1E24;
+    border: 1px solid #2b3038;
     width: 80%;
     max-width: 600px;
     margin: 35px auto;
@@ -40,8 +40,9 @@ form input, form select{
     background: #1B1E24;
     border: 1px solid #9aa2af;
     border-radius: 4px;
-    color: grey;
+    color: #eceef2;
     font-family: inherit;
+    padding: 10px;
 }
 
 .btn-submit{
