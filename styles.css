@@ -106,7 +106,7 @@ form select:focus{
     padding: 6px;
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 10px;
 }
 
 .materia li{
@@ -117,4 +117,17 @@ form select:focus{
     padding: 16px;
     border-radius: 12px;
     cursor: pointer;
+}
+
+.btn-eliminar{
+    background: transparent;
+    color: #ff8a80;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover{
+    background-color: #3a1f1d;
+    border-radius: 5px;
+    padding: 6px;
 }
