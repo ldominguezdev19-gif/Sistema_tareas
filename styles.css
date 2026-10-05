@@ -14,9 +14,13 @@ body{
 }
 
 .titulo{
-    color: #5f6773;
+    color: #eceef2;
     font-size: 28px;
     margin: 0;
+}
+
+.subtitle{
+    color: #5f6773;
 }
 
 form{
@@ -27,8 +31,7 @@ form{
 form input{
     flex: 1;
     background: #1B1E24;
-    border: none;
-    border: 1px solid grey;
+    border: 1px solid #9aa2af;
     border-radius: 4px;
     color: grey;
 }
