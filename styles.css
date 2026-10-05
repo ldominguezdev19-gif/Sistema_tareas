@@ -111,8 +111,8 @@ form select:focus{
 
 .materia li{
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
+    justify-content: space-between;  /*empuja los elementos a los extremos*/
+    align-items: center;
     border: 1px solid #9aa2af;
     padding: 16px;
     border-radius: 12px;
