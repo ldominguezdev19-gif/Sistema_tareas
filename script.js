@@ -23,7 +23,7 @@ const contenedorMateria = document.getElementById("contenedor-materias")
 
 const listaMateria = []
 function mostrarMaterias(){
-    console.log("mostrarMaterias")
+
 }
 mostrarMaterias ()
 
@@ -32,6 +32,11 @@ formMateria.addEventListener("submit", function (SubmitEvent){
     listaMateria.push(nombreMateria.value)
     nombreMateria.value = ""
     mostrarMaterias()
-    console.log(listaMateria)
+
+    listaMateria.forEach(function (materia){
+    console.log(materia)
 })
+})
+
+
 
