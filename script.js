@@ -23,6 +23,7 @@ const contenedorMateria = document.getElementById("contenedor-materias")
 
 const listaMateria = []
 function mostrarMaterias(){
+    contenedorMateria.innerHTML = ""
     listaMateria.forEach(function (materia){
     const nuevaMateria = document.createElement("h2")
     nuevaMateria.textContent = materia
