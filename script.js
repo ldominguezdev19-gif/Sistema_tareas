@@ -30,7 +30,8 @@ function mostrarMaterias() {
 
     const caja = document.createElement("section");
     caja.classList.add("materia");
-    caja.appendChild(section);
+    caja.appendChild(nuevaMateria); /*mete el titulo dentro de la caja*/
+    contenedorMateria.appendChild(caja)    /*mete la caja dentro de la pagina/*/
   });
 }
 mostrarMaterias();
