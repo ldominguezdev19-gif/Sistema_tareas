@@ -21,6 +21,8 @@ const formMateria = document.getElementById("materia");
 const nombreMateria = document.getElementById("nombre-materia");
 const contenedorMateria = document.getElementById("contenedor-materias");
 const opcionesMateria = document.getElementById("lista-materia")
+const nombreTarea = document.getElementById("nombre-tarea")
+const formTarea = document.getElementById("tarea")
 
 const listaMateria = [];
 function mostrarMaterias() {
