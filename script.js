@@ -34,6 +34,11 @@ function mostrarMaterias() {
     caja.classList.add("materia");
     caja.appendChild(nuevaMateria); /*mete el titulo dentro de la caja*/
     contenedorMateria.appendChild(caja)    /*mete la caja dentro de la pagina/*/
+
+    const opcion = document.createElement("lista-materia")
+    opcion.push(nombreMateria.value)
+    nombreMateria.value = "";
+
   });
 }
 mostrarMaterias();
