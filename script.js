@@ -29,4 +29,9 @@ mostrarMaterias ()
 
 formMateria.addEventListener("submit", function (SubmitEvent){
     SubmitEvent.preventDefault()
+    listaMateria.push(nombreMateria.value)
+    nombreMateria.value = ""
+    mostrarMaterias()
+    console.log(listaMateria)
 })
+
