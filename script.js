@@ -22,3 +22,7 @@ const nombreMateria = document.getElementById("nombre-materia")
 const contenedorMateria = document.getElementById("contenedor-materias")
 
 const listaMateria = []
+function mostrarMaterias(){
+    console.log("mostrarMaterias")
+}
+mostrarMaterias ()
