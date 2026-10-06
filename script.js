@@ -25,7 +25,7 @@ const opcionesMateria = document.getElementById("lista-materia")
 const listaMateria = [];
 function mostrarMaterias() {
   contenedorMateria.innerHTML = "";
-  listaMateria.innerHTML = "";
+  opcionesMateria.innerHTML = "";
   listaMateria.forEach(function (materia) {
     const nuevaMateria = document.createElement("h2");
     nuevaMateria.textContent = materia;
@@ -35,10 +35,10 @@ function mostrarMaterias() {
     caja.appendChild(nuevaMateria); /*mete el titulo dentro de la caja*/
     contenedorMateria.appendChild(caja)    /*mete la caja dentro de la pagina/*/
 
-    const opcion = document.createElement("lista-materia")
-    opcion.push(nombreMateria.value)
-    nombreMateria.value = "";
-
+    const opcion = document.createElement("option")
+    opcion.textContent = materia
+    opcion.value = materia;
+    opcionesMateria.appendChild(opcion)
   });
 }
 mostrarMaterias();
