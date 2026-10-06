@@ -20,4 +20,5 @@ formTarea.addEventListener("submit", function (SubmitEvent){   /*escuchar cuando
 const formMateria = document.getElementById("materia")
 const nombreMateria = document.getElementById("nombre-materia")
 const contenedorMateria = document.getElementById("contenedor-materias")
-const btnEnviar = document.getElementById("btn-submit")
+
+const listaMateria = []
