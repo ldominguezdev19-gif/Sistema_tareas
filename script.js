@@ -54,7 +54,12 @@ formMateria.addEventListener("submit", function (SubmitEvent) {
 
 const listaTareas = []
 function mostrarTareas(){
+  
+  }
+
   formTarea.addEventListener("submit", function (SubmitEvent){
     SubmitEvent.preventDefault();
+    listaTareas.push({nombre: opcionesMateria.value, tarea: nombreTarea.value, completada: false})
+    nombreTarea.value = "";
+    console.log (listaTareas)
   })
-}
