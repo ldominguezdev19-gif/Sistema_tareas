@@ -20,29 +20,51 @@ formTarea.addEventListener("submit", function (SubmitEvent){   /*escuchar cuando
 const formMateria = document.getElementById("materia");
 const nombreMateria = document.getElementById("nombre-materia");
 const contenedorMateria = document.getElementById("contenedor-materias");
-const opcionesMateria = document.getElementById("lista-materia")
-const nombreTarea = document.getElementById("nombre-tarea")
-const formTarea = document.getElementById("tarea")
+const opcionesMateria = document.getElementById("lista-materia");
+const nombreTarea = document.getElementById("nombre-tarea");
+const formTarea = document.getElementById("tarea");
 
 const listaMateria = [];
+const listaTareas = [];
+
 function mostrarMaterias() {
   contenedorMateria.innerHTML = "";
   opcionesMateria.innerHTML = "";
+
   listaMateria.forEach(function (materia) {
     const nuevaMateria = document.createElement("h2");
     nuevaMateria.textContent = materia;
 
     const caja = document.createElement("section");
     caja.classList.add("materia");
-    caja.appendChild(nuevaMateria); /*mete el titulo dentro de la caja*/
-    contenedorMateria.appendChild(caja)    /*mete la caja dentro de la pagina/*/
+    caja.appendChild(nuevaMateria); /* mete el titulo dentro de la caja */
 
-    const opcion = document.createElement("option")
-    opcion.textContent = materia
+    /* lista de tareas de esta materia */
+    const lista = document.createElement("ul");
+
+    listaTareas.forEach(function (tarea) {
+      if (tarea.materia === materia) {
+        const item = document.createElement("li");
+
+        const texto = document.createElement("span");
+        texto.classList.add("texto");
+        texto.textContent = tarea.texto;
+
+        item.appendChild(texto);
+        lista.appendChild(item);
+      }
+    });
+
+    caja.appendChild(lista); /* mete la lista dentro de la caja */
+    contenedorMateria.appendChild(caja); /* mete la caja dentro de la pagina */
+
+    const opcion = document.createElement("option");
+    opcion.textContent = materia;
     opcion.value = materia;
-    opcionesMateria.appendChild(opcion)
+    opcionesMateria.appendChild(opcion);
   });
 }
+
 mostrarMaterias();
 
 formMateria.addEventListener("submit", function (SubmitEvent) {
@@ -52,14 +74,13 @@ formMateria.addEventListener("submit", function (SubmitEvent) {
   mostrarMaterias();
 });
 
-const listaTareas = []
-function mostrarTareas(){
-  
-  }
-
-  formTarea.addEventListener("submit", function (SubmitEvent){
-    SubmitEvent.preventDefault();
-    listaTareas.push({nombre: opcionesMateria.value, tarea: nombreTarea.value, completada: false})
-    nombreTarea.value = "";
-    console.log (listaTareas)
-  })
+formTarea.addEventListener("submit", function (SubmitEvent) {
+  SubmitEvent.preventDefault();
+  listaTareas.push({
+    materia: opcionesMateria.value,
+    texto: nombreTarea.value,
+    completada: false,
+  });
+  nombreTarea.value = "";
+  mostrarMaterias();
+});
