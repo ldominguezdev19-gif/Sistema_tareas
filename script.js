@@ -52,3 +52,9 @@ formMateria.addEventListener("submit", function (SubmitEvent) {
   mostrarMaterias();
 });
 
+const listaTareas = []
+function mostrarTareas(){
+  formTarea.addEventListener("submit", function (SubmitEvent){
+    SubmitEvent.preventDefault();
+  })
+}
