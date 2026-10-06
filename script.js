@@ -26,3 +26,7 @@ function mostrarMaterias(){
     console.log("mostrarMaterias")
 }
 mostrarMaterias ()
+
+formMateria.addEventListener("submit", function (SubmitEvent){
+    SubmitEvent.preventDefault()
+})
