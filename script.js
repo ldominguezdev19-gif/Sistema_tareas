@@ -46,9 +46,18 @@ function mostrarMaterias() {
       if (tarea.materia === materia) {
         const item = document.createElement("li");
 
+      if (tarea.completada == true) {
+        item.classList.add("completada")
+      }
+
         const texto = document.createElement("span");
         texto.classList.add("texto");
         texto.textContent = tarea.texto;
+
+        item.addEventListener("click", function(){
+          tarea.completada = !tarea.completada;
+          mostrarMaterias()
+        })
 
         item.appendChild(texto);
         lista.appendChild(item);
