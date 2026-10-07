@@ -46,20 +46,38 @@ function mostrarMaterias() {
       if (tarea.materia === materia) {
         const item = document.createElement("li");
 
-      if (tarea.completada == true) {
-        item.classList.add("completada")
-      }
+        if (tarea.completada == true) {
+          item.classList.add("completada");
+        }
 
         const texto = document.createElement("span");
         texto.classList.add("texto");
         texto.textContent = tarea.texto;
 
-        item.addEventListener("click", function(){
+        const acciones = document.createElement("div");
+        acciones.classList.add("acciones");
+
+        const btnEliminar = document.createElement("button");
+        btnEliminar.type = "button";
+        btnEliminar.classList.add("btn-eliminar");
+        btnEliminar.textContent = "Eliminar";
+
+        btnEliminar.addEventListener("click", function (evento) {
+          evento.stopPropagation();
+          const posicion = listaTareas.indexOf(tarea);
+          listaTareas.splice(posicion, 1);
+          mostrarMaterias();
+        });
+
+        acciones.appendChild(btnEliminar);
+
+        item.addEventListener("click", function () {
           tarea.completada = !tarea.completada;
-          mostrarMaterias()
-        })
+          mostrarMaterias();
+        });
 
         item.appendChild(texto);
+        item.appendChild(acciones)
         lista.appendChild(item);
       }
     });
